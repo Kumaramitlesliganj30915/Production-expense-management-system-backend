@@ -29,6 +29,10 @@ app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 //port
 const PORT = 5000 || process.env.PORT;
 
+app.get((req, res) => {
+  `<h3>Welcone to Expense management system backend URL....</h3>`
+})
+
 //listen server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
